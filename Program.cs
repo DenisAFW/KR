@@ -13,15 +13,13 @@
             count++;
         }
     }
+    Array.Resize(ref NewWords, count);
     return NewWords;
 }
 
 void Print(string[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($" {array[i]} ");
-    }
+    Console.Write("[" + string.Join(", ", array) + "]");
     Console.WriteLine();
 }
 
